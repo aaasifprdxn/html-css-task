@@ -96,22 +96,61 @@ li {
   display: inline-block;
   list-style-type: none;
 }
+/*container*/
+.container { background-color: #323232; }
+
 
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 81%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+header {
+	position: relative;
+}
 
+figure {
+	position: relative;
+}
+.banner-headings h1 {
+	position: absolute;
+	top: 59px;
+	/* right: 107px; */
+	left: 77px;
+	font-size: 53px;
+	text-transform: uppercase;
+	color: #fff;
+}
 
+.banner-headings span {
+  top: 137px;
+  font-size: 24px;
+  text-transform: capitalize;
+  left: 75px;
+	position: absolute;
+	color: #fff;
+}
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
 
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 24px;
+	text-transform: capitalize;
+	background-color: rgb(0 0 0 / 33%);
+}
 
-
+nav a {
+	padding: 27px 59px 27px 63px;
+}
 /*=================================
   Header styling ends here
 =================================*/  
