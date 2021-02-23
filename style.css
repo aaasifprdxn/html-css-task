@@ -218,6 +218,59 @@ nav a {
   background-color: #076599;
   color: #fff;
 }
+
+
+/*help*/
+.help-section {
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-bottom: 70px;
+  background-color: #fff;
+}
+
+.help-section-container {
+  display: flex;
+  background-color: #076599;
+  padding: 45px 95px;
+}
+
+.help-section-content h2 {
+  color: #fefbfe;
+  font-size: 33px;
+  text-transform: capitalize;
+  padding-bottom: 18px;
+}
+
+.help-section-content p {
+  font-size: 18px;
+    color: #fefbfe;
+    line-height: 198%;
+
+}
+
+button {
+  width: 20%;
+  /* height: 50px; */
+  border: none;
+  border: solid 1px #fefbfe;
+  /* border-radius: 5px; */
+  background: rgba(255, 255, 255,0);
+  font-size: 21px;
+  color: #fefbfe;
+  padding: 8px;
+  margin-top: 18px;
+}
+
+button:hover {
+  background:black;
+  color:white; 
+}
+
+.help-section-container figure {
+  width: 47%;
+  padding-top: 22px;
+  padding-right: 58px;
+}
 /*=================================
   main styling ends here
 =================================*/
