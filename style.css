@@ -115,7 +115,7 @@ header {
 	border-bottom: 11px solid hsl(200deg 91% 30%);
 }
 
-figure {	position: relative; }
+.banner-image {	position: relative; }
 
 .banner-headings h1 {
 	position: absolute;
@@ -188,11 +188,10 @@ nav a:nth-child(1) {	padding-left: 6%; }
 }
 
 .photo-gallery ul li {
-  width: 23%;
-  padding-top: 50px;
-  padding-right: 26px;
-  text-align: center;
-
+	width: 22%;
+	padding-top: 50px;
+	padding-right: 4%;
+	text-align: center;
 }
 
 .photo-gallery ul li:nth-child(4n) {  padding-right: 0; }
@@ -294,7 +293,46 @@ footer p {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+ /*header section responsive*/
+	header {
+		position: static;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	nav a:nth-child(1) {
+    padding-left: 0;
+}
+	.banner-image { position: static;	 }
 
+	nav { position: static;}
 
+	nav a {
+		display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    border: 1px solid darkgrey;
+		padding: 18px 0px 18px 0px;
+    color: #fff;
+    font-size: 35px;
+	}
+
+	.banner-headings h1 {
+    position: absolute;
+    font-size: 72px;
+    text-transform: uppercase;
+    color: #fff;
+		top: 500px;
+    left: 150px;
+	}
+
+	.banner-headings span {
+		font-size: 37px;
+		text-transform: capitalize;
+		position: absolute;
+		color: #fff;
+		top: 600px;
+		left: 151px;
+	}
 
 }  
