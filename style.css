@@ -335,4 +335,17 @@ footer p {
 		left: 151px;
 	}
 
+	.photo-gallery ul li {
+		width: 46%;
+		padding-right: 0;
+	}
+
+	.photo-gallery ul li:nth-child(2n) {
+    padding-left: 8%;
+}
+
+button {
+	width: 32%;
+}
+
 }  
