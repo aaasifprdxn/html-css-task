@@ -112,6 +112,7 @@ li {
 
 header {
 	position: relative;
+	border-bottom: 11px solid hsl(200deg 91% 30%);
 }
 
 figure {
@@ -159,13 +160,64 @@ nav a {
   main styling starts here
 =================================*/
 
+.bookstore-gallery {
+	padding: 83px 48px 65px;
+	background-color: #fff;
+}
 
+.bookstore-gallery h2 {
+	font-size: 32px;
+	text-transform: capitalize;
+	color: #808080;
+	padding-bottom: 26px;
 
+}
 
+.bookstore-gallery p {
+  color: #808080;
+  font-size: 20px;
+  padding-bottom: 13px;
+}
 
+.photo-gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.photo-gallery ul li {
+  width: 23%;
+  padding-top: 50px;
+  padding-right: 26px;
+  text-align: center;
 
+}
 
+.photo-gallery ul li:nth-child(4n) {
+  padding-right: 0;
+
+}
+
+.photo-gallery figure {
+  padding-bottom: 24px;
+}
+
+.gallery-button ul {
+  padding-top: 83px;
+    text-align: center;
+}
+
+.gallery-button ul li a{
+  font-size: 23px;
+  padding: 13px 18px;
+  color: #808080;
+  background-color: #ededed;;
+  margin-left: 10px
+}
+
+.gallery-button ul li a:hover {
+  background-color: #076599;
+  color: #fff;
+}
 /*=================================
   main styling ends here
 =================================*/
