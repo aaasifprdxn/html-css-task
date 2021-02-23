@@ -162,7 +162,7 @@ nav a:nth-child(1) {	padding-left: 6%; }
 /*=================================
   main styling starts here
 =================================*/
-
+/*gallery section*/
 .bookstore-gallery {
 	padding: 83px 48px 65px;
 	background-color: #fff;
@@ -217,7 +217,7 @@ nav a:nth-child(1) {	padding-left: 6%; }
 }
 
 
-/*help*/
+/*help section*/
 .help-section {
   padding-left: 48px;
   padding-right: 48px;
@@ -301,7 +301,7 @@ footer p {
 	}
 	nav a:nth-child(1) {
     padding-left: 0;
-}
+	}
 	.banner-image { position: static;	 }
 
 	nav { position: static;}
@@ -344,8 +344,8 @@ footer p {
     padding-left: 8%;
 }
 
-button {
-	width: 32%;
-}
+	button {
+		width: 32%;
+	}
 
 }  
