@@ -115,13 +115,11 @@ header {
 	border-bottom: 11px solid hsl(200deg 91% 30%);
 }
 
-figure {
-	position: relative;
-}
+figure {	position: relative; }
+
 .banner-headings h1 {
 	position: absolute;
 	top: 59px;
-	/* right: 107px; */
 	left: 77px;
 	font-size: 53px;
 	text-transform: uppercase;
@@ -136,9 +134,7 @@ figure {
 	position: absolute;
 	color: #fff;
 }
-body {
-  font-family: 'Trebuchet MS', sans-serif;
-}
+body { font-family: 'Trebuchet MS', sans-serif; }
 
 nav {
 	position: absolute;
@@ -150,10 +146,15 @@ nav {
 }
 
 nav a {
-	padding: 27px 59px 27px 63px;
-  color: #fff;
-
+	padding: 27px 0px 27px 0px;
+	color: #fff;
+	width: 18%;
+/*	padding: 27px 59px 27px 63px;
+  color: #fff; */
 }
+
+nav a:nth-child(1) {	padding-left: 6%; } 
+
 /*=================================
   Header styling ends here
 =================================*/  
@@ -194,18 +195,13 @@ nav a {
 
 }
 
-.photo-gallery ul li:nth-child(4n) {
-  padding-right: 0;
+.photo-gallery ul li:nth-child(4n) {  padding-right: 0; }
 
-}
-
-.photo-gallery figure {
-  padding-bottom: 24px;
-}
+.photo-gallery figure {  padding-bottom: 24px; }
 
 .gallery-button ul {
   padding-top: 83px;
-    text-align: center;
+  text-align: center;
 }
 
 .gallery-button ul li a{
@@ -245,18 +241,16 @@ nav a {
 
 .help-section-content p {
   font-size: 18px;
-    color: #fefbfe;
-    line-height: 198%;
+  color: #fefbfe;
+  line-height: 198%;
 
 }
 
 button {
   width: 20%;
-  /* height: 50px; */
   border: none;
   border: solid 1px #fefbfe;
-  /* border-radius: 5px; */
-  background: rgba(255, 255, 255,0);
+  background: #ffffff00;
   font-size: 21px;
   color: #fefbfe;
   padding: 8px;
