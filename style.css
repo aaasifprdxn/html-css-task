@@ -96,9 +96,11 @@ li {
   display: inline-block;
   list-style-type: none;
 }
+
+body { font-family: 'Trebuchet MS', sans-serif; }
+
 /*container*/
 .container { background-color: #323232; }
-
 
 /*for wrapper*/
 .wrapper {
@@ -112,7 +114,7 @@ li {
 
 header {
 	position: relative;
-	border-bottom: 11px solid hsl(200deg 91% 30%);
+	border-bottom: 11px solid #076492;
 }
 
 .banner-image {	position: relative; }
@@ -134,7 +136,6 @@ header {
 	position: absolute;
 	color: #fff;
 }
-body { font-family: 'Trebuchet MS', sans-serif; }
 
 nav {
 	position: absolute;
@@ -142,15 +143,17 @@ nav {
 	width: 100%;
 	font-size: 24px;
 	text-transform: capitalize;
-	background-color: rgb(0 0 0 / 33%);
+	background-color: #00000054;
 }
 
 nav a {
-	padding: 27px 0px 27px 0px;
+	padding: 27px 0;
 	color: #fff;
 	width: 18%;
-/*	padding: 27px 59px 27px 63px;
-  color: #fff; */
+}
+
+nav a:hover {
+  color: #00ffff;
 }
 
 nav a:nth-child(1) {	padding-left: 6%; } 
@@ -203,7 +206,7 @@ nav a:nth-child(1) {	padding-left: 6%; }
   text-align: center;
 }
 
-.gallery-button ul li a{
+.gallery-button ul li a {
   font-size: 23px;
   padding: 13px 18px;
   color: #808080;
@@ -219,9 +222,7 @@ nav a:nth-child(1) {	padding-left: 6%; }
 
 /*help section*/
 .help-section {
-  padding-left: 48px;
-  padding-right: 48px;
-  padding-bottom: 70px;
+  padding : 0 48px 70px;
   background-color: #fff;
 }
 
@@ -241,7 +242,7 @@ nav a:nth-child(1) {	padding-left: 6%; }
 .help-section-content p {
   font-size: 18px;
   color: #fefbfe;
-  line-height: 198%;
+  line-height: 40px;
 
 }
 
@@ -249,7 +250,7 @@ button {
   width: 20%;
   border: none;
   border: solid 1px #fefbfe;
-  background: #ffffff00;
+  background: transparent;
   font-size: 21px;
   color: #fefbfe;
   padding: 8px;
@@ -257,8 +258,8 @@ button {
 }
 
 button:hover {
-  background:black;
-  color:white; 
+  background:#000;
+  color:#fff; 
 }
 
 .help-section-container figure {
@@ -274,17 +275,13 @@ button:hover {
   footer styling starts here
 =================================*/ 
 
-
-
 footer p {
   text-align: center;
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 18px;
-    padding: 17px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 18px;
+  padding: 17px;
 }
-
-
 
  /*=================================
   footer styling ends here
@@ -293,26 +290,27 @@ footer p {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+
  /*header section responsive*/
 	header {
-		position: static;
+		position: initial;
 		display: flex;
 		flex-direction: column-reverse;
 	}
-	nav a:nth-child(1) {
-    padding-left: 0;
-	}
-	.banner-image { position: static;	 }
 
-	nav { position: static;}
+	nav a:nth-child(1) { padding-left: 0; }
+
+	.banner-image { position: initial;	 }
+
+	nav { position: initial; }
 
 	nav a {
 		display: block;
     width: 100%;
     text-align: center;
     background-color: #000;
-    border: 1px solid darkgrey;
-		padding: 18px 0px 18px 0px;
+    border: 1px solid #a9a9a9;
+		padding: 18px 0px;
     color: #fff;
     font-size: 35px;
 	}
@@ -340,12 +338,8 @@ footer p {
 		padding-right: 0;
 	}
 
-	.photo-gallery ul li:nth-child(2n) {
-    padding-left: 8%;
-}
+	.photo-gallery ul li:nth-child(2n) { padding-left: 8%; }
 
-	button {
-		width: 32%;
-	}
+	button { width: 32%; }
 
 }  
