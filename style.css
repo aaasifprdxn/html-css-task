@@ -112,9 +112,9 @@ body { font-family: 'Trebuchet MS', sans-serif; }
   Header styling starts here
 =================================*/
 
-header {
+header .wrapper {
 	position: relative;
-	border-bottom: 11px solid #076492;
+  border-bottom: 11px solid #076492;
 }
 
 .banner-image {	position: relative; }
@@ -165,6 +165,7 @@ nav a:nth-child(1) {	padding-left: 6%; }
 /*=================================
   main styling starts here
 =================================*/
+
 /*gallery section*/
 .bookstore-gallery {
 	padding: 83px 48px 65px;
@@ -176,7 +177,6 @@ nav a:nth-child(1) {	padding-left: 6%; }
 	text-transform: capitalize;
 	color: #808080;
 	padding-bottom: 26px;
-
 }
 
 .bookstore-gallery p {
@@ -199,14 +199,14 @@ nav a:nth-child(1) {	padding-left: 6%; }
 
 .photo-gallery ul li:nth-child(4n) {  padding-right: 0; }
 
-.photo-gallery figure {  padding-bottom: 24px; }
+.photo-gallery li {  padding-bottom: 24px; }
 
-.gallery-button ul {
+.gallery-button {
   padding-top: 83px;
   text-align: center;
 }
 
-.gallery-button ul li a {
+.gallery-button li a {
   font-size: 23px;
   padding: 13px 18px;
   color: #808080;
@@ -214,11 +214,10 @@ nav a:nth-child(1) {	padding-left: 6%; }
   margin-left: 10px
 }
 
-.gallery-button ul li a:hover {
+.gallery-button li a:hover {
   background-color: #076599;
   color: #fff;
 }
-
 
 /*help section*/
 .help-section {
@@ -243,7 +242,6 @@ nav a:nth-child(1) {	padding-left: 6%; }
   font-size: 18px;
   color: #fefbfe;
   line-height: 40px;
-
 }
 
 button {
@@ -292,7 +290,8 @@ footer p {
 @media only screen and (max-width: 995px) {
 
  /*header section responsive*/
-	header {
+	
+  header .wrapper {
 		position: initial;
 		display: flex;
 		flex-direction: column-reverse;
@@ -300,7 +299,7 @@ footer p {
 
 	nav a:nth-child(1) { padding-left: 0; }
 
-	.banner-image { position: initial;	 }
+	.banner-image { position: initial; }
 
 	nav { position: initial; }
 
